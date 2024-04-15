@@ -1,0 +1,669 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  background-color: #e3e7eb;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.08);
+}
+
+.nav-logo {
+  width: 50px;
+}
+
+nav ul {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li:last-child {
+  margin-left: auto;
+  color: red;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.nav-item.active {
+  font-weight: 700;
+}
+
+.nav-contact {
+  background-color: black;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.card {
+  width: 80%;
+  margin-block: 8rem;
+  padding: 4rem;
+  display: flex;
+  gap: 3rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.desc {
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.download-group {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.contact-btn {
+  font-size: 1.2rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.contact-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.download {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.download:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.social-media {
+  display: flex;
+  width: 50%;
+  gap: 2rem;
+}
+
+.social-media a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.social-media a:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.profile {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
+}
+
+.profile-pict {
+  width: 300px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.img-footer {
+  padding: 1rem;
+}
+
+.name {
+  text-align: center;
+}
+
+.role {
+  text-align: center;
+}
+
+/* Contact Form */
+.container-project {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  width: 30%;
+  margin-top: 6rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper-project {
+  width: 50%;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper-project-list {
+  width: 100%;
+  margin-top: 4rem;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-contact {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.form-myproject {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 500;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.08);
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  padding: 5px;
+  font-weight: 500;
+}
+
+select {
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+button[type="submit"] {
+  width: 25%;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+#project-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px;
+}
+
+#description {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.duration {
+  display: flex;
+}
+
+.duration .start,
+.duration .end {
+  width: 50%;
+}
+
+.start {
+  margin-right: 50px;
+}
+
+.duration input[type="date"] {
+  display: block;
+  width: 100%;
+}
+
+.checking {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.checking label {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.check-tech,
+.label-check {
+  width: 35%;
+}
+
+.check-tech[type="checkbox"] {
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+  border-radius: 5px;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.check-tech[type="checkbox"]:hover {
+  border-color: #e3e7eb;
+}
+
+.check-tech[type="checkbox"]:checked {
+  background-color: #13ee05;
+  border-color: #13ee05;
+}
+
+.check-tech[type="checkbox"]:checked::before {
+  content: "";
+  position: absolute;
+  color: white;
+  top: 1px;
+  left: 5px;
+  width: 0.5rem;
+  height: 1rem;
+  border-style: solid;
+  border-width: 0 0.2rem 0.2rem 0;
+  transform: rotate(45deg);
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.file-upload {
+  display: inline-block;
+  padding: 8px 16px;
+  color: black;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.file-upload-wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: white;
+}
+
+.file-upload-label {
+  display: inline-block;
+  width: 25%;
+  padding: 8px 16px;
+  background-color: #e4e4e4;
+  color: #b2abab;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.fa-solid {
+  position: absolute;
+  font-size: 20px;
+  top: 30%;
+  left: 95%;
+}
+
+.fa-paperclip {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 2rem;
+  width: 100%;
+}
+.card-project {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dce0e4;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  overflow: hidden;
+}
+
+.profile-project {
+  width: 100%;
+  height: 300px;
+  padding: 15px 15px 5px;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.footer-project {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+
+.footer-project h2 {
+  margin: 1px;
+  font-weight: 500;
+}
+
+.durasi {
+  font-weight: 200;
+  font-size: 16px;
+  padding: 1px 0;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
+.desc-project {
+  padding: 5px 1px;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.list-tech {
+  display: flex;
+  gap: 2rem;
+  padding-left: 5px;
+  margin-top: 5px;
+}
+
+.list-tech li {
+  list-style: none;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.list-btn {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 10px;
+}
+.list-btn button {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  background: #111727;
+  padding: 5px 10px;
+  text-decoration: none;
+  width: 45%;
+}
+
+.list-btn button:hover {
+  background: #42454f;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Detail Project */
+
+.container-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 6rem;
+}
+
+.container-detail h1 {
+  margin-left: 30rem;
+}
+
+.desc-detail {
+  width: 90%;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  text-align: justify;
+}
+
+.wrapper-detail {
+  width: 100%;
+  margin-left: 4rem;
+  display: flex;
+  flex-direction: row;
+
+  gap: 2rem;
+}
+
+.time-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.time-detail h2 {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.time-detail p {
+  font-weight: 200;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.time-detail h2 {
+  margin-bottom: 10px;
+}
+
+.fa-regular {
+  margin-right: 10px;
+}
+
+.fa-brands {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.tech-detail p {
+  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+
+.wrapper-detail img {
+  width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 0.2rem;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 0.8rem;
+    font-size: 0.9rem;
+    margin-left: -5px;
+  }
+
+  .nav-logo {
+    margin-left: 5px;
+  }
+
+  .nav-contact {
+    padding: 6px 10px;
+    border-radius: 12px;
+    margin-right: 5px;
+  }
+
+  .card {
+    width: 90%;
+    flex-direction: column;
+    padding: 2rem;
+    margin-block: 4rem;
+    margin-top: 7rem;
+  }
+
+  .social-media {
+    width: 100%;
+  }
+
+  .social-media a {
+    width: 30px;
+    height: 30px;
+  }
+
+  .profile-pict {
+    width: 100%;
+  }
+
+  .wrapper {
+    width: 80%;
+    margin-top: 6rem;
+  }
+
+  .wrapper-project {
+    width: 90%;
+  }
+
+  .wrapper-project-list {
+    width: 90%;
+    margin-right: 2rem;
+  }
+
+  .form-myproject {
+    width: 100%;
+  }
+
+  .duration .end,
+  .duration .start {
+    width: 42%;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.08);
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  button[type="submit"] {
+    width: 30%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .checking {
+    display: flex;
+    gap: 2px;
+  }
+
+  .file-upload-label {
+    width: 30%;
+    border-radius: 5px;
+  }
+
+  .card-project {
+    max-width: 100%;
+  }
+}

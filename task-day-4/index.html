@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <img src="assets/images/dumbways-logo.png" alt="logo" class="nav-logo" />
+      <ul>
+        <li><a href="index.html" class="nav-item">Home</a></li>
+        <li><a href="myproject.html" class="nav-item active">My Project</a></li>
+        <li><a href="contact-form.html" class="nav-contact">Contact Me</a></li>
+      </ul>
+    </nav>
+
+    <div class="container-project">
+      <div class="wrapper-project">
+        <h1>ADD MY PROJECT</h1>
+        <form action="" class="form-myproject" id="form-project">
+          <label for="project-name">Project Name</label>
+          <input type="text" id="project-name" />
+
+          <div class="duration">
+            <div class="start">
+              <label for="start-date">Start Date</label>
+              <input type="date" id="start-date" />
+            </div>
+            <div class="end">
+              <label for="start-date">End Date</label>
+              <input type="date" id="end-date" />
+            </div>
+          </div>
+
+          <label for="description">Description</label>
+          <textarea name="description" id="description"></textarea>
+
+          <label for="">Technologies</label>
+          <div class="checking">
+            <input class="check-tech" type="checkbox" id="technologies1" />
+            <label class="label-check" for="technologies1">Node JS</label>
+
+            <input class="check-tech" type="checkbox" id="technologies2" />
+            <label class="label-check" for="technologies2">React JS</label>
+
+            <input class="check-tech" type="checkbox" id="technologies3" />
+            <label class="label-check" for="technologies3">Next JS</label>
+
+            <input class="check-tech" type="checkbox" id="technologies4" />
+            <label class="label-check" for="technologies4">Typescript</label>
+          </div>
+
+          <label for="input-image">Upload Image</label>
+
+          <div class="file-upload-wrapper">
+            <input type="file" id="input-image" class="file-upload" />
+            <label for="input-image" class="file-upload-label">Choose </label>
+            <i class="fa-solid fa-paperclip"></i>
+          </div>
+          <button type="submit" onclick="addProject(event); resetUpload()">
+            Submit
+          </button>
+        </form>
+      </div>
+
+      <div class="wrapper-project-list">
+        <h1>MY PROJECT</h1>
+        <div class="project-list" id="list-project">
+          <div class="card-project">
+            <img
+              src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="ini gambar"
+              class="profile-project"
+            />
+            <div class="footer-project">
+              <h2>Nama Project</h2>
+              <p class="durasi">Durasi</p>
+              <p class="desc-project">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
+                sit, voluptatem labore corrupti sequi sint nulla earum ipsa quo
+                beatae incidunt odit porro consequatur dolores distinctio magnam
+                impedit placeat. Debitis!
+              </p>
+              <ul class="list-tech">
+                <li><i class="fa-brands fa-google-play"></i></li>
+                <li><i class="fa-brands fa-android"></i></li>
+                <li><i class="fa-brands fa-java"></i></li>
+              </ul>
+              <div class="list-btn">
+                <button>Edit</button>
+                <button>Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
